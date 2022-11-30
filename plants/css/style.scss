@@ -1,9 +1,3 @@
-$background-color: #EDF2EC;
-$links-nav: #010201;
-$main-text: #636060;
-$green-text: #499A18;
-$orange: #E06733;
-
 @font-face {
     font-family: 'Inika';
     src: url('/assets/fonts/Inika-Regular.ttf');
@@ -14,12 +8,32 @@ $orange: #E06733;
     src: url('/assets/fonts/Inter-Regular.ttf');
 }
 
+@mixin main-typography ($height: 35px) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: $height;
+}
+
+$background-color: #EDF2EC;
+$links-nav: #010201;
+$main-text: #636060;
+$green-text: #499A18;
+$orange: #E06733;
+
 $Inika: 'Inika', serif;
 $Inter: 'Inter', sans-serif;
 
 .header {
     background-color: $background-color;
     font-family: $Inika;
+}
+
+.nav-link {
+    &:hover {
+        color: $orange;
+    }
 }
 
 .welcome {
@@ -35,4 +49,12 @@ $Inter: 'Inter', sans-serif;
     span {
         color: $green-text;
     }
+}
+
+.welcome-text {
+    @include main-typography();
+}
+
+.about-text {
+    @include main-typography(30px);
 }
