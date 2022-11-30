@@ -7,7 +7,12 @@
   src: url("/assets/fonts/Inter-Regular.ttf");
 }
 .header {
+  background-color: #EDF2EC;
   font-family: "Inika", serif;
+}
+
+.welcome {
+  background-color: #EDF2EC;
 }
 
 .welcome-block {

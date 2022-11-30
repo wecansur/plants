@@ -18,7 +18,12 @@ $Inika: 'Inika', serif;
 $Inter: 'Inter', sans-serif;
 
 .header {
+    background-color: $background-color;
     font-family: $Inika;
+}
+
+.welcome {
+    background-color: $background-color; 
 }
 
 .welcome-block {
