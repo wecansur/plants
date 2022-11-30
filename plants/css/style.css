@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Inika";
+  src: url("/assets/fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+.header {
+  font-family: "Inika", serif;
+}
 
+.welcome-block {
+  font-family: "Inter", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */

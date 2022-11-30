@@ -3,3 +3,24 @@ $links-nav: #010201;
 $main-text: #636060;
 $green-text: #499A18;
 $orange: #E06733;
+
+@font-face {
+    font-family: 'Inika';
+    src: url('/assets/fonts/Inika-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Regular.ttf');
+}
+
+$Inika: 'Inika', serif;
+$Inter: 'Inter', sans-serif;
+
+.header {
+    font-family: $Inika;
+}
+
+.welcome-block {
+    font-family: $Inter;
+}
