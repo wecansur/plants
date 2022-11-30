@@ -29,3 +29,10 @@ $Inter: 'Inter', sans-serif;
 .welcome-block {
     font-family: $Inter;
 }
+
+.welcome-title {
+    color: #717171;
+    span {
+        color: $green-text;
+    }
+}

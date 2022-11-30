@@ -19,4 +19,11 @@
   font-family: "Inter", sans-serif;
 }
 
+.welcome-title {
+  color: #717171;
+}
+.welcome-title span {
+  color: #499A18;
+}
+
 /*# sourceMappingURL=style.css.map */
