@@ -1,14 +1,78 @@
 @font-face {
-  font-family: "Inika";
+  font-family: 'Inika';
   src: url("/assets/fonts/Inika-Regular.ttf");
 }
+
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   src: url("/assets/fonts/Inter-Regular.ttf");
 }
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0, 110px, 0 110px;
+}
+
 .header {
   background-color: #EDF2EC;
   font-family: "Inika", serif;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-container {
+  padding: 52px 0 61px 0;
+  height: 20px;
+}
+
+.logo {
+  width: 19.52px;
+  height: 19.55px;
+}
+
+.logo-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.nav-section {
+  padding: 42px 0;
+  width: 45.5%;
+  height: 50px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #010201;
 }
 
 .nav-link:hover {
@@ -26,12 +90,13 @@
 .welcome-title {
   color: #717171;
 }
+
 .welcome-title span {
   color: #499A18;
 }
 
 .welcome-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -39,11 +104,10 @@
 }
 
 .about-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -25,12 +25,65 @@ $orange: #E06733;
 $Inika: 'Inika', serif;
 $Inter: 'Inter', sans-serif;
 
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0, 110px, 0 110px;
+}
+
 .header {
+    
     background-color: $background-color;
     font-family: $Inika;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo-container {
+    padding: 52px 0 61px 0;
+    height: 20px;
+}
+
+.logo {
+    width: 19.52px;
+    height: 19.55px;
+}
+
+.logo-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.nav-section {
+    padding: 42px 0;
+    width: 45.5%;
+    height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    
+
+    list-style: none;
 }
 
 .nav-link {
+    text-decoration: none;
+    color: #010201;
     &:hover {
         color: $orange;
     }
