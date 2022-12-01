@@ -25,6 +25,8 @@ $orange: #E06733;
 $Inika: 'Inika', serif;
 $Inter: 'Inter', sans-serif;
 
+//header
+
 .container {
     max-width: 1440px;
     margin: auto;
@@ -32,7 +34,6 @@ $Inter: 'Inter', sans-serif;
 }
 
 .header {
-    
     background-color: $background-color;
     font-family: $Inika;
 
@@ -72,11 +73,11 @@ $Inter: 'Inter', sans-serif;
     
     padding: 0;
     margin: 0;
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 50px;
-    
 
     list-style: none;
 }
@@ -88,6 +89,8 @@ $Inter: 'Inter', sans-serif;
         color: $orange;
     }
 }
+
+//welcome
 
 .welcome {
     background-color: $background-color; 
