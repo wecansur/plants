@@ -152,12 +152,51 @@
   transition: .3s;
 }
 
+.about {
+  height: 666px;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-block {
+  width: 49.5%;
+  margin: 150px 0 0 0;
+  padding: 0;
+}
+
+.about-title {
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.about-title span {
+  color: #E06733;
+}
+
 .about-text {
+  margin: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #636060;
+}
+
+.houseplant {
+  margin-top: 82px;
 }
 /*# sourceMappingURL=style.css.map */

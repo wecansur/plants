@@ -17,6 +17,14 @@
     color: $main-text;
 }
 
+@mixin inika-titles () {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+}
+
 $background-color: #EDF2EC;
 $links-nav: #010201;
 $main-text: #636060;
@@ -157,6 +165,39 @@ $Inter: 'Inter', sans-serif;
     }
 }
 
+//about
+
+.about {
+    height: 666px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.about-block {
+    width: 49.5%;
+    margin: 150px 0 0 0;
+    padding: 0;
+}
+
+.about-title {
+    margin: 0;
+    padding-bottom: 40px;
+    @include inika-titles();
+    color: $green-text;
+
+    span {
+        color: $orange;
+    }
+}
+
 .about-text {
+    margin: 0;
     @include main-typography(30px);
+}
+
+.houseplant {
+    margin-top: 82px;
 }
