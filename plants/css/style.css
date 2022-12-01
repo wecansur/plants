@@ -199,4 +199,93 @@
 .houseplant {
   margin-top: 82px;
 }
+
+.services {
+  height: 1300px;
+  background-color: #EDF2EC;
+}
+
+.services .container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.services-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.services-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 559px;
+}
+
+.services-bttn {
+  padding: 12px 40px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  background-color: transparent;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 330px;
+}
+
+.service-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.service-title {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #E06733;
+}
+
+.service-p {
+  margin: 0 0 36px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+}
 /*# sourceMappingURL=style.css.map */
