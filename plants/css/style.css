@@ -77,17 +77,43 @@
 
 .nav-link:hover {
   color: #E06733;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .welcome {
+  height: 532px;
   background-color: #EDF2EC;
+}
+
+.welcome .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.leafs {
+  margin-top: 16px;
+  max-width: 448.8px;
+  max-height: auto;
 }
 
 .welcome-block {
   font-family: "Inter", sans-serif;
+  width: 45.8%;
 }
 
 .welcome-title {
+  margin: 0;
+  padding: 66px 0 42px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
   color: #717171;
 }
 
@@ -96,11 +122,34 @@
 }
 
 .welcome-text {
+  margin: 0 0 48px 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
+  color: #636060;
+}
+
+.welcome-button {
+  width: 158.65px;
+  height: 44px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.welcome-button:hover {
+  background-color: #E06733;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .about-text {
@@ -109,5 +158,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  color: #636060;
 }
 /*# sourceMappingURL=style.css.map */
