@@ -265,7 +265,11 @@ $Inter: 'Inter', sans-serif;
 
 .services-block {
     display: grid;
-    
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-column-gap: 9.5%;
+    grid-row-gap: 5.9%;
+
+    margin-top: 88px;
 }
 
 .service {

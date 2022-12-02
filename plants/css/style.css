@@ -267,6 +267,12 @@
 .services-block {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-column-gap: 9.5%;
+  grid-row-gap: 5.9%;
+  margin-top: 88px;
 }
 
 .service {
