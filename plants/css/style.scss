@@ -28,8 +28,8 @@
 
 @mixin price-typography ($line-height: 48px) {
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    
+    font-weight: bold;
     font-size: 40px;
     line-height: $line-height;
 }
@@ -55,6 +55,10 @@ $border-color: #E3E1D5;
 
 $Inika: 'Inika', serif;
 $Inter: 'Inter', sans-serif;
+
+html {
+    scroll-behavior: smooth;   
+}
 
 //header
 
@@ -296,6 +300,10 @@ $Inter: 'Inter', sans-serif;
     max-width: 330px;
 
     cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
 }
 
 .service-img {
@@ -386,6 +394,11 @@ $Inter: 'Inter', sans-serif;
     border-radius: 20px;
 
     cursor: pointer;
+
+    &:hover {
+        background-color: $green-text;
+        transition: .3s;
+    }
 }
 
 .arrow {
@@ -483,6 +496,11 @@ $Inter: 'Inter', sans-serif;
     border-radius: 0px;
 
     cursor: pointer;
+
+    &:hover {
+        background-color: $green-text;
+        transition: .3s;
+    }
 }
 
 .city-arrow {

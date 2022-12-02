@@ -8,6 +8,10 @@
   src: url("/assets/fonts/Inter-Regular.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -298,6 +302,13 @@
   cursor: pointer;
 }
 
+.service:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .service-img {
   border-radius: 20px 20px 0px 0px;
 }
@@ -353,8 +364,7 @@
 .prices-title {
   margin: 5px 0 60px 0;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
   line-height: 48px;
 }
@@ -397,6 +407,12 @@
   cursor: pointer;
 }
 
+.tariff:hover {
+  background-color: #499A18;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .arrow {
   padding: 6px;
   border-radius: 50%;
@@ -420,8 +436,7 @@
   max-width: 452px;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
   line-height: 50px;
   text-align: right;
@@ -507,6 +522,12 @@
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
   cursor: pointer;
+}
+
+.cities:hover {
+  background-color: #499A18;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .city-arrow {
