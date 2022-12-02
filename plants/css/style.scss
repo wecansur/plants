@@ -425,3 +425,68 @@ $Inter: 'Inter', sans-serif;
     border-radius: 5px;
     @include button-hover ();
 }
+
+//contacts
+
+.contacts {
+    height: 542px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 45px;
+    }
+
+    background-color: $background-color;
+}
+
+.contacts-title {
+    padding-left: 50px;
+    margin-top: 15px;
+
+    font-family: $Inika;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: $green-text;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 5px 35px 5px 20px;
+    margin-top: 100px;
+
+    width: 36.9%;
+    height: 50px;
+
+    font-family: $Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+
+    color: $grey;
+
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+.city-arrow {
+    margin-left: 5px;
+    padding: 6px 5px;
+
+    border-radius: 50%;
+    background-color: #AEA1A1;
+}
+
+.woman {
+    order: -1;
+}

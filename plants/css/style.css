@@ -452,4 +452,70 @@
   -webkit-transition: .3s;
   transition: .3s;
 }
+
+.contacts {
+  height: 542px;
+  background-color: #EDF2EC;
+}
+
+.contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 45px;
+}
+
+.contacts-title {
+  padding-left: 50px;
+  margin-top: 15px;
+  font-family: "Inika", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.cities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 35px 5px 20px;
+  margin-top: 100px;
+  width: 36.9%;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  background: #D6E7D2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+}
+
+.city-arrow {
+  margin-left: 5px;
+  padding: 6px 5px;
+  border-radius: 50%;
+  background-color: #AEA1A1;
+}
+
+.woman {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
 /*# sourceMappingURL=style.css.map */
