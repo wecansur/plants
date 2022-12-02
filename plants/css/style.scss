@@ -18,12 +18,30 @@
 }
 
 @mixin inika-titles () {
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
     color: $green-text;
+}
+
+@mixin price-typography ($line-height: 48px) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: $line-height;
+}
+
+@mixin button-hover ($color: #FFFFFF) {
+    cursor: pointer;
+
+    &:hover {
+        color: $color;
+        background-color: $orange;
+        transition: .3s;
+    }
 }
 
 $background-color: #EDF2EC;
@@ -32,6 +50,7 @@ $main-text: #636060;
 $green-text: #499A18;
 $orange: #E06733;
 $grey: #717171;
+$border-color: #E3E1D5;
 
 
 $Inika: 'Inika', serif;
@@ -116,7 +135,7 @@ $Inter: 'Inter', sans-serif;
 }
 
 .leafs {
-    margin-top: 16px;
+    margin-top: 30px;
     max-width: 448.8px;
     max-height: auto;
 }
@@ -128,7 +147,7 @@ $Inter: 'Inter', sans-serif;
 
 .welcome-title {
     margin: 0;
-    padding: 66px 0 42px 0;
+    padding: 85px 0 42px 0;
     font-family: $Inter;
     font-style: normal;
     font-weight: 700;
@@ -160,12 +179,7 @@ $Inter: 'Inter', sans-serif;
     border: 2px solid $orange;
     border-radius: 10px;
 
-    cursor: pointer;
-
-    &:hover {
-        background-color: $orange;
-        transition: .3s;
-    }
+    @include button-hover (#000000);
 }
 
 //about
@@ -213,8 +227,6 @@ $Inter: 'Inter', sans-serif;
     background-color: $background-color;
 
     .container {
-        
-
         padding-top: 35px;
     }
 }
@@ -244,7 +256,6 @@ $Inter: 'Inter', sans-serif;
 }
 
 .services-bttn {
-    
     margin: 0;
     padding: 0;
 
@@ -261,6 +272,8 @@ $Inter: 'Inter', sans-serif;
     background-color: transparent;
     border: 1px solid $orange;
     border-radius: 5px;
+
+    @include button-hover ();
 }
 
 .services-block {
@@ -277,6 +290,8 @@ $Inter: 'Inter', sans-serif;
     flex-direction: column;
 
     max-width: 330px;
+
+    cursor: pointer;
 }
 
 .service-img {
@@ -291,7 +306,7 @@ $Inter: 'Inter', sans-serif;
     font-family: $Inter;
     font-style: normal;
 
-    border: 1px solid #E3E1D5;
+    border: 1px solid $border-color;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -314,4 +329,99 @@ $Inter: 'Inter', sans-serif;
     line-height: 20px;
 
     color: $grey;
+}
+
+//prices
+
+.prices {
+    height: 568px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 38px;
+    }
+}
+
+.prices-title {
+    margin: 5px 0 60px 0;
+
+    @include price-typography ();
+}
+
+.tariffes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 122.5%;
+    height: 282px;
+    padding: 34px 41px;
+
+    border: 1px solid $border-color;
+    border-radius: 20px;
+}
+
+.tariff {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 40px;
+
+    max-width: 250px;
+    height: 50px;
+
+    font-family: $Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    background-color: $background-color;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.arrow {
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.gardeners-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gardeners-title {
+    max-width: 452px;
+    margin: 0;
+    @include price-typography (50px);
+    
+    text-align: right;
+    span {
+      color: $green-text;  
+    }
+}
+
+.contact-btn {
+    max-width: 162px;
+    margin-top: 37px;
+    padding: 12px 34px 12px 30px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: $orange;
+    background-color: transparent;
+    border: 1px solid $orange;
+    border-radius: 5px;
+    @include button-hover ();
 }

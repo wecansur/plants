@@ -96,7 +96,7 @@
 }
 
 .leafs {
-  margin-top: 16px;
+  margin-top: 30px;
   max-width: 448.8px;
   max-height: auto;
 }
@@ -108,7 +108,7 @@
 
 .welcome-title {
   margin: 0;
-  padding: 66px 0 42px 0;
+  padding: 85px 0 42px 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -147,6 +147,7 @@
 }
 
 .welcome-button:hover {
+  color: #000000;
   background-color: #E06733;
   -webkit-transition: .3s;
   transition: .3s;
@@ -174,7 +175,7 @@
 .about-title {
   margin: 0;
   padding-bottom: 40px;
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -226,7 +227,7 @@
   max-width: 306px;
   margin: 0;
   padding: 0;
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -262,6 +263,14 @@
   background-color: transparent;
   border: 1px solid #E06733;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.services-bttn:hover {
+  color: #FFFFFF;
+  background-color: #E06733;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .services-block {
@@ -284,6 +293,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 330px;
+  cursor: pointer;
 }
 
 .service-img {
@@ -322,5 +332,124 @@
   font-size: 16px;
   line-height: 20px;
   color: #717171;
+}
+
+.prices {
+  height: 568px;
+}
+
+.prices .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 38px;
+}
+
+.prices-title {
+  margin: 5px 0 60px 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.tariffes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 122.5%;
+  height: 282px;
+  padding: 34px 41px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
+.tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 40px;
+  max-width: 250px;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.arrow {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+
+.gardeners-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.gardeners-title {
+  max-width: 452px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+}
+
+.gardeners-title span {
+  color: #499A18;
+}
+
+.contact-btn {
+  max-width: 162px;
+  margin-top: 37px;
+  padding: 12px 34px 12px 30px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #E06733;
+  background-color: transparent;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: #FFFFFF;
+  background-color: #E06733;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 /*# sourceMappingURL=style.css.map */
