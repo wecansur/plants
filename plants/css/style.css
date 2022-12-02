@@ -521,6 +521,7 @@
 
 .footer {
   height: 132px;
+  padding-top: 41px;
 }
 
 .footer .container {
@@ -530,7 +531,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 41px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;

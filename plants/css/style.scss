@@ -495,12 +495,11 @@ $Inter: 'Inter', sans-serif;
 
 .footer {
     height: 132px;
+    padding-top: 41px;
 
     .container {
         display: flex;
         justify-content: space-between;
-
-        margin-top: 41px;
 
         font-family: $Inter;
         font-style: normal;
