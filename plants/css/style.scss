@@ -334,6 +334,14 @@ html {
 
     .container {
         padding-top: 35px;
+
+        @media (max-width:972px) {
+            padding-top: 60px;
+        }
+    }
+
+    @media (max-width:972px) {
+        height: 1780px;
     }
 }
 
@@ -343,6 +351,10 @@ html {
     display: flex;
     justify-content: space-between;
     max-width: 1007px;
+
+    @media (max-width:972px) {
+        flex-direction: column;
+    }
 }
 
 .services-title {
@@ -350,6 +362,12 @@ html {
     margin: 0;
     padding: 0;
     @include inika-titles();
+
+    @media (max-width:972px) {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    
 }
 
 .services-buttons {
@@ -359,6 +377,11 @@ html {
     width: 55.5%;
     padding-top: 29px;
     padding-bottom: 15px;
+
+    @media (max-width:972px) {
+        width: 83.55%;
+        padding-top: 38px;
+    }
 }
 
 .services-bttn {
@@ -389,6 +412,12 @@ html {
     grid-row-gap: 5.9%;
 
     margin-top: 88px;
+    
+    @media (max-width:972px) {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+
+        margin-top: 25px;
+    }
 }
 
 .service {
@@ -402,12 +431,32 @@ html {
         transform: scale(1.1);
         transition: .3s;
     }
+
+    @media (max-width:972px) {
+        width: 93%;
+    }
 }
 
 .service-img {
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0px 0px;
+
+    @media (max-width:972px) {
+        display: none;
+    }
+}
+
+.service-img-tablet {
+    display: none;
+
+    @media (max-width:972px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
 }
 
 .service-text {
@@ -439,8 +488,14 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
 
     color: $grey;
+
+    @media (max-width:972px) {
+        width: 73%;
+        margin: 0 0 20px 0;
+    }
 }
 
 //prices
