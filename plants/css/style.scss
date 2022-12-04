@@ -430,7 +430,6 @@ html {
     margin-top: 88px;
     
     @media (max-width:768px) {
-        //grid-template: 1fr 1fr 1fr / 42% 107px 42%;
         grid-template: 1fr 1fr 1fr / 1fr 1fr;
         grid-column-gap: 16%;
         grid-row-gap: 3.085%;
@@ -454,12 +453,6 @@ html {
         width: 100%;
     }
 }
-
-/*.services-block:nth-child(odd) {
-    @media (max-width:972px) {
-        grid-column-start: 1;
-    }
-}*/
 
 .service-img {
     width: 100%;
@@ -526,12 +519,19 @@ html {
 
 .prices {
     height: 568px;
-
+    
+    @media (max-width: 768px) {
+        height: 585px;
+    }
     .container {
         display: flex;
         justify-content: space-between;
 
         padding-top: 38px;
+
+        @media (max-width: 768px) {
+            padding-top: 0px;
+        }
     }
 }
 
@@ -539,6 +539,13 @@ html {
     margin: 5px 0 60px 0;
 
     @include price-typography ();
+
+    @media (max-width: 768px) {
+        margin: 40px 0 50px 0;
+
+        font-size: 35px;
+        line-height: 42px;
+    }
 }
 
 .tariffes {
@@ -552,6 +559,10 @@ html {
 
     border: 1px solid $border-color;
     border-radius: 20px;
+
+    @media (max-width: 768px) {
+        margin-top: 55px;
+    }
 }
 
 .tariff {
@@ -590,6 +601,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media (max-width: 768px) {
+        margin-top: 139px;
+    }
 }
 
 .gardeners-title {
@@ -601,10 +616,22 @@ html {
     span {
       color: $green-text;  
     }
+
+    @media (max-width: 768px) {
+        width: 74.65%;
+
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
 
 .leafs-2-container {
     width: 63%;
+
+    @media (max-width: 768px) {
+        width: 38.5%;
+        margin-top: 34px;
+    }
 }
 
 .leafs-2 {
@@ -629,6 +656,10 @@ html {
     border: 1px solid $orange;
     border-radius: 5px;
     @include button-hover ();
+
+    @media (max-width: 768px) {
+        margin-top: 30px;
+    }
 }
 
 //contacts

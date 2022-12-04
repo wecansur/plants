@@ -522,11 +522,6 @@ html {
   }
 }
 
-/*.services-block:nth-child(odd) {
-    @media (max-width:972px) {
-        grid-column-start: 1;
-    }
-}*/
 .service-img {
   width: 100%;
   height: auto;
@@ -598,6 +593,12 @@ html {
   height: 568px;
 }
 
+@media (max-width: 768px) {
+  .prices {
+    height: 585px;
+  }
+}
+
 .prices .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,12 +609,26 @@ html {
   padding-top: 38px;
 }
 
+@media (max-width: 768px) {
+  .prices .container {
+    padding-top: 0px;
+  }
+}
+
 .prices-title {
   margin: 5px 0 60px 0;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
+}
+
+@media (max-width: 768px) {
+  .prices-title {
+    margin: 40px 0 50px 0;
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 
 .tariffes {
@@ -632,6 +647,12 @@ html {
   padding: 34px 41px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .tariffes {
+    margin-top: 55px;
+  }
 }
 
 .tariff {
@@ -679,6 +700,12 @@ html {
           align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+  .gardeners-block {
+    margin-top: 139px;
+  }
+}
+
 .gardeners-title {
   max-width: 452px;
   margin: 0;
@@ -693,8 +720,23 @@ html {
   color: #499A18;
 }
 
+@media (max-width: 768px) {
+  .gardeners-title {
+    width: 74.65%;
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
 .leafs-2-container {
   width: 63%;
+}
+
+@media (max-width: 768px) {
+  .leafs-2-container {
+    width: 38.5%;
+    margin-top: 34px;
+  }
 }
 
 .leafs-2 {
@@ -724,6 +766,12 @@ html {
   background-color: #E06733;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 768px) {
+  .contact-btn {
+    margin-top: 30px;
+  }
 }
 
 .contacts {
