@@ -101,9 +101,13 @@ html {
   padding-top: 16px;
 }
 
+.leafs-container {
+  width: 36.59%;
+}
+
 .leafs {
-  max-width: 448.8px;
-  max-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .welcome-block {
@@ -203,8 +207,14 @@ html {
   color: #636060;
 }
 
+.houseplant-container {
+  width: 38%;
+}
+
 .houseplant {
   margin-top: 82px;
+  width: 100%;
+  height: auto;
 }
 
 .services {
@@ -298,7 +308,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 330px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -310,6 +320,8 @@ html {
 }
 
 .service-img {
+  width: 100%;
+  height: auto;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -446,6 +458,15 @@ html {
   color: #499A18;
 }
 
+.leafs-2-container {
+  width: 63%;
+}
+
+.leafs-2 {
+  width: 100%;
+  height: auto;
+}
+
 .contact-btn {
   max-width: 162px;
   margin-top: 37px;
@@ -537,10 +558,15 @@ html {
   background-color: #AEA1A1;
 }
 
-.woman {
+.woman-container {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.woman {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
