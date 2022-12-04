@@ -667,11 +667,24 @@ html {
 .contacts {
     height: 542px;
 
+    @media (max-width:1227px) {
+        height: 739px;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
 
         padding-top: 45px;
+
+        @media (max-width:1227px) {
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 40px;
+            height: 739px;
+            
+        }
     }
 
     background-color: $background-color;
@@ -688,6 +701,11 @@ html {
     line-height: 52px;
 
     color: $green-text;
+
+    @media (max-width:1227px) {
+        padding-left: 0;
+        margin: 0;
+    }
 }
 
 .cities {
@@ -717,8 +735,13 @@ html {
     cursor: pointer;
 
     &:hover {
-        background-color: $green-text;
+        background-color: #C1E698;;
         transition: .3s;
+    }
+
+    @media (max-width:1227px) {
+        margin: 0 0 140px 0;
+        width: 450px;
     }
 }
 
@@ -732,11 +755,19 @@ html {
 
 .woman-container {
     order: -1;
+    max-width: 400px;
+    @media (max-width:1227px) {
+        order: 1;
+        max-width: 200px;
+    }
 }
 
 .woman {
     width: 100%;
     height: auto;
+    @media (max-width:1227px) {
+
+    }
 }
 
 //footer

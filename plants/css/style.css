@@ -779,6 +779,12 @@ html {
   background-color: #EDF2EC;
 }
 
+@media (max-width: 1227px) {
+  .contacts {
+    height: 739px;
+  }
+}
+
 .contacts .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,6 +793,20 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 45px;
+}
+
+@media (max-width: 1227px) {
+  .contacts .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+    height: 739px;
+  }
 }
 
 .contacts-title {
@@ -798,6 +818,13 @@ html {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
+}
+
+@media (max-width: 1227px) {
+  .contacts-title {
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 .cities {
@@ -829,9 +856,16 @@ html {
 }
 
 .cities:hover {
-  background-color: #499A18;
+  background-color: #C1E698;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 1227px) {
+  .cities {
+    margin: 0 0 140px 0;
+    width: 450px;
+  }
 }
 
 .city-arrow {
@@ -845,6 +879,16 @@ html {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  max-width: 400px;
+}
+
+@media (max-width: 1227px) {
+  .woman-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 200px;
+  }
 }
 
 .woman {
