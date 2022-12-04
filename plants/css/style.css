@@ -18,7 +18,7 @@ html {
   padding: 0 110px;
 }
 
-@media (max-width: 958px) {
+@media (max-width: 972px) {
   .container {
     padding: 0 50px;
   }
@@ -234,6 +234,12 @@ html {
   height: 666px;
 }
 
+@media (max-width: 972px) {
+  .about {
+    height: 783px;
+  }
+}
+
 .about .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,10 +249,39 @@ html {
           justify-content: space-between;
 }
 
+@media (max-width: 972px) {
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .about-block {
   width: 49.5%;
   margin: 150px 0 0 0;
   padding: 0;
+}
+
+@media (max-width: 972px) {
+  .about-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px 0 0 0;
+    width: 100%;
+  }
 }
 
 .about-title {
@@ -264,6 +299,17 @@ html {
   color: #E06733;
 }
 
+@media (max-width: 972px) {
+  .about-title {
+    padding-bottom: 45px;
+    width: 63.45%;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+  }
+}
+
 .about-text {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -274,6 +320,14 @@ html {
   color: #636060;
 }
 
+@media (max-width: 972px) {
+  .about-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .houseplant-container {
   width: 38%;
 }
@@ -282,6 +336,12 @@ html {
   margin-top: 82px;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 972px) {
+  .houseplant {
+    margin-top: 70px;
+  }
 }
 
 .services {

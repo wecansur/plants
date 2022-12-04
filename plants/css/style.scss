@@ -67,7 +67,7 @@ html {
     margin: auto;
     padding: 0 110px;
 
-    @media (max-width: 958px) {
+    @media (max-width: 972px) {
         padding: 0 50px;
     }
 }
@@ -248,9 +248,18 @@ html {
 .about {
     height: 666px;
 
+    @media (max-width: 972px) {
+        height: 783px;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 972px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -258,6 +267,15 @@ html {
     width: 49.5%;
     margin: 150px 0 0 0;
     padding: 0;
+
+    @media (max-width: 972px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0 0 0;
+
+        width: 100%;
+    }
 }
 
 .about-title {
@@ -265,15 +283,30 @@ html {
     padding-bottom: 40px;
     @include inika-titles();
     
-
     span {
         color: $orange;
+    }
+
+    @media (max-width: 972px) {
+        padding-bottom: 45px;
+        width: 63.45%;
+        
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
     }
 }
 
 .about-text {
     margin: 0;
     @include main-typography(30px);
+
+    @media (max-width: 972px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 
@@ -286,6 +319,10 @@ html {
 
     width: 100%;
     height: auto;
+
+    @media (max-width:972px) {
+        margin-top: 70px;
+    }
 }
 
 //services
