@@ -133,7 +133,7 @@ html {
 
 @media (max-width: 958px) {
   .welcome {
-    height: 453px;
+    height: 420px;
   }
 }
 
@@ -931,7 +931,7 @@ html {
 @media (max-width: 885px) {
   .footer {
     height: 200px;
-    padding-top: 25px;
+    padding-top: 23px;
   }
 }
 
@@ -977,6 +977,13 @@ html {
 @media (max-width: 1227px) {
   .social-list {
     width: 24.5%;
+  }
+}
+
+@media (max-width: 885px) {
+  .social-list {
+    padding: 25px 0 0 0;
+    width: 27.6%;
   }
 }
 

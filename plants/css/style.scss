@@ -44,7 +44,7 @@
     }
 }
 
-$background-color: #EDF2EC;
+$background-color: #EDF2EC;;
 $links-nav: #010201;
 $main-text: #636060;
 $green-text: #499A18;
@@ -161,7 +161,7 @@ html {
     }
 
     @media (max-width: 958px) {
-        height: 453px;
+        height: 420px;
     }
 }
 
@@ -793,7 +793,7 @@ html {
 
     @media (max-width: 885px) {
         height: 200px;
-        padding-top: 25px;
+        padding-top: 23px;
     }
 }
 
@@ -833,6 +833,11 @@ html {
 
     @media (max-width: 1227px) {
         width: 24.5%;
+    }
+
+    @media (max-width: 885px) {
+        padding: 25px 0 0 0;
+        width: 27.6%;
     }
 }
 
