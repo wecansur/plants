@@ -18,6 +18,12 @@ html {
   padding: 0 110px;
 }
 
+@media (max-width: 958px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
 .header {
   height: 134px;
   background-color: #EDF2EC;
@@ -33,9 +39,21 @@ html {
           justify-content: space-between;
 }
 
+@media (max-width: 958px) {
+  .header {
+    height: 117px;
+  }
+}
+
 .logo-container {
   padding: 52px 0 61px 0;
   height: 20px;
+}
+
+@media (max-width: 958px) {
+  .logo-container {
+    padding: 46px 0 61px 0;
+  }
 }
 
 .logo {
@@ -52,8 +70,14 @@ html {
 
 .nav-section {
   padding: 42px 0;
-  width: 38.1%;
+  width: 465px;
   height: 50px;
+}
+
+@media (max-width: 958px) {
+  .nav-section {
+    padding: 35px 0;
+  }
 }
 
 .nav-list {
@@ -101,8 +125,29 @@ html {
   padding-top: 16px;
 }
 
+@media (max-width: 958px) {
+  .welcome .container {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 958px) {
+  .welcome {
+    height: 453px;
+  }
+}
+
 .leafs-container {
   width: 36.59%;
+}
+
+@media (max-width: 958px) {
+  .leafs-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 42%;
+  }
 }
 
 .leafs {
@@ -114,6 +159,13 @@ html {
   width: 45.8%;
   padding-top: 50px;
   font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 958px) {
+  .welcome-block {
+    width: 51.2%;
+    padding-top: 0;
+  }
 }
 
 .welcome-title {
@@ -131,6 +183,13 @@ html {
   color: #499A18;
 }
 
+@media (max-width: 958px) {
+  .welcome-title {
+    padding: 0 0 30px 0;
+    font-size: 35px;
+  }
+}
+
 .welcome-text {
   margin: 0 0 48px 0;
   font-family: 'Inter', sans-serif;
@@ -139,6 +198,14 @@ html {
   font-size: 20px;
   line-height: 35px;
   color: #636060;
+}
+
+@media (max-width: 958px) {
+  .welcome-text {
+    margin: 0 0 40px 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .welcome-button {
