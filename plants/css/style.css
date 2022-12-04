@@ -915,6 +915,26 @@ html {
   line-height: 50px;
 }
 
+@media (max-width: 885px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 885px) {
+  .footer {
+    height: 200px;
+    padding-top: 25px;
+  }
+}
+
 .creator-info {
   margin: 0;
   word-spacing: 15px;
@@ -935,6 +955,12 @@ html {
   padding-left: 15px;
 }
 
+@media (max-width: 1227px) {
+  .rss {
+    padding-left: 0;
+  }
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,6 +972,12 @@ html {
   margin: 0;
   width: 15.45%;
   list-style: none;
+}
+
+@media (max-width: 1227px) {
+  .social-list {
+    width: 24.5%;
+  }
 }
 
 .social-img:hover {
