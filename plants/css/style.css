@@ -482,6 +482,12 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .services .container {
+    padding-top: 30px;
+  }
+}
+
 @media (max-width: 1220px) {
   .services {
     height: 1200px;
@@ -509,6 +515,12 @@ html {
 @media (max-width: 768px) {
   .services {
     height: 1780px;
+  }
+}
+
+@media (max-width: 665px) {
+  .services {
+    height: 3150px;
   }
 }
 
@@ -553,6 +565,14 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .services-title {
+    font-size: 25px;
+    line-height: 33px;
+    width: 56.8%;
+  }
+}
+
 .services-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,6 +591,18 @@ html {
   .services-buttons {
     width: 83.55%;
     padding-top: 38px;
+  }
+}
+
+@media (max-width: 665px) {
+  .services-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 9px;
+    width: 252px;
+    height: 79px;
   }
 }
 
@@ -598,6 +630,14 @@ html {
   transition: .3s;
 }
 
+@media (max-width: 665px) {
+  .services-bttn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+
 .services-block {
   display: -ms-grid;
   display: grid;
@@ -617,6 +657,17 @@ html {
     grid-column-gap: 16%;
     grid-row-gap: 3.085%;
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 665px) {
+  .services-block {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+    grid-row-gap: 1.2%;
+    padding: 0 25px;
+    margin-top: 75px;
   }
 }
 
