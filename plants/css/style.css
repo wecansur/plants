@@ -1085,6 +1085,12 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+  .contacts {
+    height: 445px;
+  }
+}
+
 .contacts .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1109,6 +1115,20 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+  .contacts .container {
+    height: 445px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .contacts-title {
   padding-left: 50px;
   margin-top: 15px;
@@ -1123,7 +1143,14 @@ html {
 @media (max-width: 1227px) {
   .contacts-title {
     padding-left: 0;
-    margin: 0;
+    margin: 0 0 80px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-title {
+    font-size: 25px;
+    line-height: 33px;
   }
 }
 
@@ -1168,6 +1195,20 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+  .cities {
+    margin: 0 0 113px 0;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cities {
+    width: 100%;
+    margin: 0 0 133px 0;
+  }
+}
+
 .city-arrow {
   margin-left: 5px;
   padding: 6px 5px;
@@ -1188,6 +1229,12 @@ html {
         -ms-flex-order: 1;
             order: 1;
     max-width: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .woman-container {
+    max-width: 100px;
   }
 }
 
