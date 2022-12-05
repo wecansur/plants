@@ -532,6 +532,24 @@ html {
 
 @media (max-width: 600px) {
   .services {
+    height: 3700px;
+  }
+}
+
+@media (max-width: 440px) {
+  .services {
+    height: 3600px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services {
+    height: 3300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .services {
     height: 3150px;
   }
 }
@@ -715,7 +733,7 @@ html {
 
 @media (max-width: 665px) {
   .service {
-    max-width: 280px;
+    max-width: 350px;
   }
 }
 

@@ -463,6 +463,18 @@ html {
     }
 
     @media (max-width:600px) {
+        height: 3700px;
+    }
+
+    @media (max-width:440px) {
+        height: 3600px;
+    }
+
+    @media (max-width:400px) {
+        height: 3300px;
+    }
+
+    @media (max-width:380px) {
         height: 3150px;
     }
 }
@@ -593,7 +605,7 @@ html {
     }
 
     @media (max-width:665px) {
-        max-width: 280px;
+        max-width: 350px;
     }
 }
 
