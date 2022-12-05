@@ -795,6 +795,11 @@ html {
     @media (max-width: 768px) {
         margin-top: 139px;
     }
+
+    @media (max-width: 665px) {
+        align-items: center;
+        margin-top: 19px;
+    }
 }
 
 .gardeners-title {
@@ -812,6 +817,11 @@ html {
 
         font-size: 25px;
         line-height: 35px;
+    }
+
+    @media (max-width: 665px) {
+        font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -853,6 +863,16 @@ html {
 
     @media (max-width: 768px) {
         margin-top: 30px;
+    }
+
+    @media (max-width: 665px) {
+        max-width: 121px;
+        height: 35px;
+        padding: 8px 22px;
+        margin-top: 14px;
+
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 
