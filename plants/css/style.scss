@@ -70,6 +70,10 @@ html {
     @media (max-width: 972px) {
         padding: 0 50px;
     }
+
+    @media (max-width: 480px) {
+        padding: 0 25px;
+    }
 }
 
 .header {
@@ -85,6 +89,10 @@ html {
     @media (max-width: 958px) {
         height: 117px;
     }
+
+    @media (max-width: 480px) {
+        height: 96px;
+    }
 }
 
 .logo-container {
@@ -93,6 +101,10 @@ html {
 
     @media (max-width: 958px) {
         padding: 46px 0 61px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 36px 0 61px 0;
     }
 }
 
@@ -115,6 +127,10 @@ html {
 
     @media (max-width: 958px) {
         padding: 35px 0;
+    }
+
+    @media (max-width: 665px) {
+        display: none;
     }
 }
 
@@ -143,6 +159,16 @@ html {
     }
 }
 
+.burger-container {
+    display: none;
+
+    @media (max-width:665px) {
+        display: block;
+        margin-top: 36px;
+        cursor: pointer;
+    }
+}
+
 //welcome
 
 .welcome {
@@ -158,10 +184,18 @@ html {
         @media (max-width: 958px) {
             padding-top: 40px;
         }
+
+        @media (max-width:665px) {
+            padding-top: 24px;
+        }
     }
 
     @media (max-width: 958px) {
         height: 420px;
+    }
+
+    @media (max-width:665px) {
+        height: 300px;
     }
 }
 
@@ -172,6 +206,10 @@ html {
         order: 2;
 
         width: 42%;
+    }
+
+    @media (max-width:600px) {
+        display: none;
     }
 }
 
@@ -189,6 +227,10 @@ html {
         width: 51.2%;
         padding-top: 0;
         
+    }
+
+    @media (max-width:665px) {
+        width: 100%;
     }
 
 }
@@ -211,6 +253,13 @@ html {
         padding: 0 0 30px 0;
         font-size: 35px;
     }
+
+    @media (max-width:665px) {
+        padding: 0 0 20px 0;
+
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
 
 .welcome-text {
@@ -222,6 +271,10 @@ html {
 
         font-size: 16px;
         line-height: 25px;
+    }
+
+    @media (max-width:665px) {
+        margin: 0 0 25px 0;
     }
 }
 
@@ -241,6 +294,13 @@ html {
     border-radius: 10px;
 
     @include button-hover (#000000);
+
+    @media (max-width:665px) {
+        width: 100px;
+        height: 34px;
+
+        font-size: 10px;
+    }
 }
 
 //about
@@ -683,7 +743,6 @@ html {
 
             padding-top: 40px;
             height: 739px;
-            
         }
     }
 
