@@ -678,6 +678,10 @@ html {
     @media (max-width: 768px) {
         height: 585px;
     }
+
+    @media (max-width: 665px) {
+        height: 512px;
+    }
     .container {
         display: flex;
         justify-content: space-between;
@@ -686,6 +690,11 @@ html {
 
         @media (max-width: 768px) {
             padding-top: 0px;
+        }
+
+        @media (max-width: 665px) {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -700,6 +709,14 @@ html {
 
         font-size: 35px;
         line-height: 42px;
+    }
+
+    @media (max-width: 665px) {
+        margin: 25px 0 40px 0;
+
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
     }
 }
 
@@ -717,6 +734,17 @@ html {
 
     @media (max-width: 768px) {
         margin-top: 55px;
+    }
+
+    @media (max-width: 665px) {
+        margin-top: 0;
+    }
+
+    @media (max-width: 665px) {
+        align-items: center;
+        width: 90.5%;
+        height: 235px;
+        margin-left: 20px;
     }
 }
 
@@ -743,6 +771,13 @@ html {
     &:hover {
         background-color: $green-text;
         transition: .3s;
+    }
+
+    @media (max-width: 665px) {
+        width: 119.5%;
+        padding: 16px 40px 16px 30px;
+
+        font-size: 15px;
     }
 }
 
@@ -786,6 +821,10 @@ html {
     @media (max-width: 768px) {
         width: 38.5%;
         margin-top: 34px;
+    }
+
+    @media (max-width: 665px) {
+        display: none;
     }
 }
 
