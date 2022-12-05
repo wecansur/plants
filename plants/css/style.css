@@ -518,7 +518,19 @@ html {
   }
 }
 
-@media (max-width: 665px) {
+@media (max-width: 740px) {
+  .services {
+    height: 1700px;
+  }
+}
+
+@media (max-width: 670px) {
+  .services {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 600px) {
   .services {
     height: 3150px;
   }
@@ -662,12 +674,17 @@ html {
 
 @media (max-width: 665px) {
   .services-block {
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-block {
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-columns: 1fr;
         grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
     grid-row-gap: 1.2%;
     padding: 0 25px;
-    margin-top: 75px;
   }
 }
 
@@ -693,6 +710,12 @@ html {
 @media (max-width: 972px) {
   .service {
     width: 100%;
+  }
+}
+
+@media (max-width: 665px) {
+  .service {
+    max-width: 280px;
   }
 }
 
