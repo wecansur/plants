@@ -1195,6 +1195,12 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .cities {
+    margin: 0 0 233px 0;
+  }
+}
+
 @media (max-width: 650px) {
   .cities {
     margin: 0 0 113px 0;
@@ -1282,6 +1288,13 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+  .footer {
+    height: 161px;
+    padding-top: 15px;
+  }
+}
+
 .creator-info {
   margin: 0;
   word-spacing: 15px;
@@ -1331,6 +1344,13 @@ html {
   .social-list {
     padding: 25px 0 0 0;
     width: 27.6%;
+  }
+}
+
+@media (max-width: 650px) {
+  .social-list {
+    padding: 5px 0 0 0;
+    width: 57%;
   }
 }
 

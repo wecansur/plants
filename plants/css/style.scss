@@ -976,6 +976,10 @@ html {
         width: 450px;
     }
 
+    @media (max-width: 768px) {
+        margin: 0 0 233px 0;
+    }
+
     @media (max-width:650px) {
         margin: 0 0 113px 0;
         padding-right: 20px;
@@ -1041,6 +1045,11 @@ html {
         height: 200px;
         padding-top: 23px;
     }
+
+    @media (max-width: 650px) {
+        height: 161px;
+        padding-top: 15px;
+    }
 }
 
 .creator-info {
@@ -1084,6 +1093,11 @@ html {
     @media (max-width: 885px) {
         padding: 25px 0 0 0;
         width: 27.6%;
+    }
+
+    @media (max-width: 650px) {
+        padding: 5px 0 0 0;
+        width: 57%;
     }
 }
 
