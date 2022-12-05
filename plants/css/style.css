@@ -322,6 +322,12 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .about {
+    height: 516px;
+  }
+}
+
 .about .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,6 +372,13 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .about-block {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+
 .about-title {
   margin: 0;
   padding-bottom: 40px;
@@ -392,6 +405,15 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .about-title {
+    width: 87.3%;
+    padding-bottom: 15px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
 .about-text {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -410,8 +432,21 @@ html {
   }
 }
 
+@media (max-width: 665px) {
+  .about-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
 .houseplant-container {
   width: 38%;
+}
+
+@media (max-width: 665px) {
+  .houseplant-container {
+    width: 45%;
+  }
 }
 
 .houseplant {
@@ -423,6 +458,12 @@ html {
 @media (max-width: 972px) {
   .houseplant {
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 665px) {
+  .houseplant {
+    margin-top: 0;
   }
 }
 
