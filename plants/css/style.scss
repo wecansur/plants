@@ -633,6 +633,14 @@ html {
     }
 }
 
+.button-active {
+    color: #FFFFFF;
+    background-color: $orange;
+
+    transform: scale(0.8);
+    transition: .3s;
+}
+
 .services-block {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -679,6 +687,11 @@ html {
     @media (max-width:665px) {
         max-width: 350px;
     }
+}
+
+.blur {
+    filter: blur(2px);
+    transition: .3s;
 }
 
 .service-img {

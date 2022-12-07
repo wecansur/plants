@@ -746,6 +746,15 @@ html {
   }
 }
 
+.button-active {
+  color: #FFFFFF;
+  background-color: #E06733;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .services-block {
   display: -ms-grid;
   display: grid;
@@ -813,6 +822,13 @@ html {
   .service {
     max-width: 350px;
   }
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .service-img {
