@@ -35,64 +35,49 @@ const plantingServices = document.querySelectorAll('.planting-service');
 const lawnService = document.querySelector('.lawn-service');
 
 gardenButton.addEventListener('click', () => {
-    if ((lawnButton.className !== 'services-bttn lawn-button button-active') || (plantingButton.className !== 'services-bttn planting-button button-active')) {
+    if (!((lawnButton.className === 'services-bttn lawn-button button-active') && (plantingButton.className === 'services-bttn planting-button button-active'))) {
         gardenButton.classList.toggle('button-active');
-        
-        if (4 === 4) {
-            plantingServices.forEach((item) => {
-                item.classList.toggle('blur');
-            });
-        }
-        if (4 === 4) {
-            lawnService.classList.toggle('blur');
-        }
-        
-        if (gardenServices[0].className === 'service garden-service blur') {
+        if (!((lawnButton.className === 'services-bttn lawn-button button-active') || (plantingButton.className === 'services-bttn planting-button button-active'))) {
+                plantingServices.forEach((item) => {
+                    item.classList.toggle('blur');
+                });
+                lawnService.classList.toggle('blur');
+        } else {
             gardenServices.forEach((item) => {
-                item.classList.remove('blur');
+                item.classList.toggle('blur');
             });
         }
     }
 })
 
 lawnButton.addEventListener('click', () => {
-    if ((gardenButton.className !== 'services-bttn garden-button button-active') || (plantingButton.className !== 'services-bttn planting-button button-active')) {
+    if (!((gardenButton.className === 'services-bttn garden-button button-active') && (plantingButton.className === 'services-bttn planting-button button-active'))) {
         lawnButton.classList.toggle('button-active');
-
-        if (4 === 4) {
+        if (!((gardenButton.className === 'services-bttn garden-button button-active') || (plantingButton.className === 'services-bttn planting-button button-active'))) {
             gardenServices.forEach((item) => {
                 item.classList.toggle('blur');
             });
-        }
-        if (4 === 4) {
             plantingServices.forEach((item) => {
                 item.classList.toggle('blur');
             });
-        }
-        
-        if (lawnService.className === 'service lawn-service blur') {
-            lawnService.classList.remove('blur');
+        } else {
+            lawnService.classList.toggle('blur');
         }
     }
 })
 
 plantingButton.addEventListener('click', () => {
-    if ((gardenButton.className !== 'services-bttn garden-button button-active') || (lawnButton.className !== 'services-bttn lawn-button button-active')) {
+    if (!((gardenButton.className === 'services-bttn garden-button button-active') && (lawnButton.className === 'services-bttn lawn-button button-active'))) {
         plantingButton.classList.toggle('button-active');
-
-        if (4 === 4) {
+        if (!((gardenButton.className === 'services-bttn garden-button button-active') || (lawnButton.className === 'services-bttn lawn-button button-active'))) {
             gardenServices.forEach((item) => {
                 item.classList.toggle('blur');
             });
-        }
-        if (4 === 4) {
             lawnService.classList.toggle('blur');
-        }
-
-        if (plantingServices[0].className === 'service planting-service blur') {
+        } else {
             plantingServices.forEach((item) => {
-                item.classList.remove('blur');
-            });
+                item.classList.toggle('blur');
+            }); 
         }
     }
 })
