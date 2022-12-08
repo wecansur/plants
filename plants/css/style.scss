@@ -797,7 +797,7 @@ html {
     }
 
     @media (max-width: 665px) {
-        margin: 25px 0 40px 0;
+        margin: 25px 0 38px 0;
 
         font-size: 25px;
         line-height: 30px;
@@ -827,13 +827,12 @@ html {
 
     @media (max-width: 665px) {
         align-items: center;
-        width: 90.5%;
+        width: 224px;
         height: 235px;
-        margin-left: 20px;
     }
 }
 
-.tariff {
+.tariff-header {
     display: flex;
     justify-content: space-between;
 
@@ -857,7 +856,7 @@ html {
     }
 
     @media (max-width: 665px) {
-        width: 119.5%;
+        width: 180px;
         padding: 16px 40px 16px 30px;
 
         font-size: 15px;

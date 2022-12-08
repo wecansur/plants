@@ -960,7 +960,7 @@ html {
 
 @media (max-width: 665px) {
   .prices-title {
-    margin: 25px 0 40px 0;
+    margin: 25px 0 38px 0;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
@@ -1002,13 +1002,12 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90.5%;
+    width: 224px;
     height: 235px;
-    margin-left: 20px;
   }
 }
 
-.tariff {
+.tariff-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,15 +1026,15 @@ html {
   border-radius: 20px;
 }
 
-.tariff:hover {
+.tariff-header:hover {
   background-color: #D6E7D2;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 @media (max-width: 665px) {
-  .tariff {
-    width: 119.5%;
+  .tariff-header {
+    width: 180px;
     padding: 16px 40px 16px 30px;
     font-size: 15px;
   }
