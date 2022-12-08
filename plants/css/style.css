@@ -978,7 +978,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 332px;
   height: 282px;
   padding: 34px 40px;
   border: 1px solid #E3E1D5;
@@ -993,12 +993,8 @@ html {
 
 @media (max-width: 665px) {
   .tariffes {
+    width: 224px;
     margin-top: 0;
-  }
-}
-
-@media (max-width: 665px) {
-  .tariffes {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1053,12 +1049,20 @@ html {
 }
 
 .drop-down {
+  display: none;
   width: 250px;
   padding: 0 40px 12px 40px;
   background-color: #EDF2EC;
   border-radius: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+@media (max-width: 665px) {
+  .drop-down {
+    width: 180px;
+    padding-left: 30px;
+  }
 }
 
 .line {
