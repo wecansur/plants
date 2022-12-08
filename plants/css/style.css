@@ -1003,6 +1003,10 @@ html {
   }
 }
 
+.inactive {
+  display: none;
+}
+
 .tariff-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,6 +1043,7 @@ html {
 .tariff-header-active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  background-color: #D6E7D2;
 }
 
 .arrow {
@@ -1052,7 +1057,7 @@ html {
   display: none;
   width: 250px;
   padding: 0 40px 12px 40px;
-  background-color: #EDF2EC;
+  background-color: #D6E7D2;
   border-radius: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -1065,10 +1070,20 @@ html {
   }
 }
 
+.drop-down-active {
+  display: block;
+}
+
 .line {
   width: 164px;
   height: 1px;
   background-color: #AEA1A1;
+}
+
+@media (max-width: 665px) {
+  .line {
+    width: 90px;
+  }
 }
 
 .price-description {

@@ -81,3 +81,25 @@ plantingButton.addEventListener('click', () => {
         }
     }
 })
+
+//price drop-down
+
+const basicsButton = document.querySelector('.basics-button');
+
+const standardBlock = document.querySelector('.standard-block');
+const proCareBlock = document.querySelector('.pro-care-block');
+
+const basicsDD = document.querySelector('.basics-dd');
+
+const basicsHeader = document.querySelector('.basics-header');
+
+const activateDropDown = (dropDown, otherBlock1, otherBlock2, header) => {
+    dropDown.classList.toggle('drop-down-active');
+    otherBlock1.classList.toggle('inactive');
+    otherBlock2.classList.toggle('inactive');
+    header.classList.toggle('tariff-header-active')
+}
+
+basicsButton.addEventListener('click', () => {
+    activateDropDown(basicsDD, standardBlock, proCareBlock, basicsHeader);
+})
