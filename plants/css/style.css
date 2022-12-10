@@ -983,6 +983,7 @@ html {
   padding: 34px 40px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -1003,8 +1004,19 @@ html {
   }
 }
 
-.inactive {
-  display: none;
+.tariffes-no-padding {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tariff {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .tariff-header {
@@ -1046,11 +1058,41 @@ html {
   background-color: #D6E7D2;
 }
 
+@media (max-width: 665px) {
+  .tariff-header-active {
+    height: 30px;
+    padding: 5px 40px 5px 30px;
+  }
+}
+
 .arrow {
   padding: 6px;
   border-radius: 50%;
   background-color: #D9D9D9;
   cursor: pointer;
+}
+
+.active-arrow {
+  display: none;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #AEA1A1;
+  cursor: pointer;
+}
+
+@media (max-width: 665px) {
+  .active-arrow {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
 }
 
 .drop-down {
@@ -1066,6 +1108,7 @@ html {
 @media (max-width: 665px) {
   .drop-down {
     width: 180px;
+    height: 100px;
     padding-left: 30px;
   }
 }
@@ -1115,6 +1158,14 @@ html {
   color: #E06733;
 }
 
+@media (max-width: 665px) {
+  .price {
+    margin: 0;
+    font-size: 8px;
+    line-height: 15px;
+  }
+}
+
 .order-bttn {
   width: 86px;
   height: 25px;
@@ -1126,6 +1177,15 @@ html {
   background: #FFFFFF;
   border: none;
   border-radius: 10px;
+}
+
+@media (max-width: 665px) {
+  .order-bttn {
+    height: 20px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 .link {

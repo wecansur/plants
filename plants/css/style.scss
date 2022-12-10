@@ -817,6 +817,8 @@ html {
     border: 1px solid $border-color;
     border-radius: 20px;
 
+    overflow: hidden;
+
     @media (max-width: 768px) {
         margin-top: 55px;
     }
@@ -831,8 +833,15 @@ html {
     }
 }
 
-.inactive {
-    display: none;
+.tariffes-no-padding {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tariff {
+    transform: translate(0, 0);
+    transition: .5s;
 }
 
 .tariff-header {
@@ -871,6 +880,11 @@ html {
     border-bottom-right-radius: 0;
 
     background-color: #D6E7D2;
+
+    @media (max-width: 665px) {
+        height: 30px;
+        padding: 5px 40px 5px 30px;
+    }
 }
 
 .arrow {
@@ -880,7 +894,26 @@ html {
     cursor: pointer;
 }
 
+.active-arrow {
+    display: none;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #AEA1A1;
+    cursor: pointer;
 
+    @media (max-width: 665px) {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
 
 .drop-down {
     display: none;
@@ -894,6 +927,7 @@ html {
 
     @media (max-width: 665px) {
         width: 180px;
+        height: 100px;
         padding-left: 30px;
     }
 }
@@ -943,6 +977,12 @@ html {
         font-size: 15px;
         color: $orange;
     }
+    @media (max-width: 665px){
+        margin: 0;
+
+        font-size: 8px;
+        line-height: 15px;
+    }
 }
 
 .order-bttn {
@@ -958,6 +998,13 @@ html {
     background: #FFFFFF;
     border: none;
     border-radius: 10px;
+
+    @media (max-width: 665px){
+        height: 20px;
+        margin: 0;
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
 
 .link {

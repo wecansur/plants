@@ -85,21 +85,68 @@ plantingButton.addEventListener('click', () => {
 //price drop-down
 
 const basicsButton = document.querySelector('.basics-button');
+const standardButton = document.querySelector('.standard-button');
+const proCareButton = document.querySelector('.pro-care-button');
 
+const basicsCloseButton = document.querySelector('.basics-close-button');
+const standardCloseButton = document.querySelector('.standard-close-button');
+const proCareCloseButton = document.querySelector('.pro-care-close-button');
+
+const basicsBlock = document.querySelector('.basics-block');
 const standardBlock = document.querySelector('.standard-block');
 const proCareBlock = document.querySelector('.pro-care-block');
 
 const basicsDD = document.querySelector('.basics-dd');
+const standardDD = document.querySelector('.standard-dd');
+const proCareDD = document.querySelector('.pro-care-dd');
 
 const basicsHeader = document.querySelector('.basics-header');
+const standardHeader = document.querySelector('.standard-header');
+const proCareHeader = document.querySelector('.pro-care-header');
 
-const activateDropDown = (dropDown, otherBlock1, otherBlock2, header) => {
-    dropDown.classList.toggle('drop-down-active');
-    otherBlock1.classList.toggle('inactive');
-    otherBlock2.classList.toggle('inactive');
-    header.classList.toggle('tariff-header-active')
+const tariffesContainer = document.querySelector('.tariffes');
+
+const activateDropDown = (dropDown, header, openBtn, closeBtn) => {
+    if (basicsDD.className === 'drop-down basics-dd drop-down-active') {
+        disactivateDropDown(basicsDD, basicsHeader, basicsButton, basicsCloseButton);
+    }
+    if (standardDD.className === 'drop-down standard-dd drop-down-active') {
+        disactivateDropDown(standardDD, standardHeader, standardButton, standardCloseButton);
+    }
+    if (proCareDD.className === 'drop-down pro-care-dd drop-down-active') {
+        disactivateDropDown(proCareDD, proCareHeader, proCareButton, proCareCloseButton);
+    }
+    dropDown.classList.add('drop-down-active');
+    header.classList.add('tariff-header-active');
+    openBtn.classList.add('inactive');
+    closeBtn.classList.add('active');
+    tariffesContainer.classList.add('tariffes-no-padding');
+}
+const disactivateDropDown = (dropDown, header, openBtn, closeBtn) => {
+    dropDown.classList.remove('drop-down-active');
+    header.classList.remove('tariff-header-active');
+    openBtn.classList.remove('inactive');
+    closeBtn.classList.remove('active');
+    tariffesContainer.classList.remove('tariffes-no-padding');
 }
 
 basicsButton.addEventListener('click', () => {
-    activateDropDown(basicsDD, standardBlock, proCareBlock, basicsHeader);
+    activateDropDown(basicsDD, basicsHeader, basicsButton, basicsCloseButton);
+})
+basicsCloseButton.addEventListener('click', () => {
+    disactivateDropDown(basicsDD, basicsHeader, basicsButton, basicsCloseButton);
+})
+
+standardButton.addEventListener('click', () => {
+    activateDropDown(standardDD, standardHeader, standardButton, standardCloseButton);
+})
+standardCloseButton.addEventListener('click', () => {
+    disactivateDropDown(standardDD, standardHeader, standardButton, standardCloseButton);
+})
+
+proCareButton.addEventListener('click', () => {
+    activateDropDown(proCareDD, proCareHeader, proCareButton, proCareCloseButton);
+})
+proCareCloseButton.addEventListener('click', () => {
+    disactivateDropDown(proCareDD, proCareHeader, proCareButton, proCareCloseButton);
 })
