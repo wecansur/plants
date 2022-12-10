@@ -1356,6 +1356,9 @@ html {
 
 @media (max-width: 650px) {
   .contacts .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     height: 445px;
     padding-top: 25px;
   }
@@ -1382,19 +1385,20 @@ html {
 @media (max-width: 1227px) {
   .contacts-title {
     padding-left: 0;
-    margin: 0 0 80px 0;
+    margin: 0 0 55px 0;
   }
 }
 
 @media (max-width: 600px) {
   .contacts-title {
+    margin: 0 0 80px 0;
     font-size: 25px;
     line-height: 33px;
   }
 }
 
 .cities-block {
-  width: 36.9%;
+  width: 37%;
 }
 
 @media (max-width: 1227px) {
@@ -1403,8 +1407,18 @@ html {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .cities-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 }
@@ -1445,27 +1459,15 @@ html {
 
 @media (max-width: 1227px) {
   .cities-selector {
-    margin: 0 0 140px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .cities-selector {
-    margin: 0 0 233px 0;
+    margin: 0 0 60px 0;
   }
 }
 
 @media (max-width: 650px) {
   .cities-selector {
-    margin: 0 0 113px 0;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .cities-selector {
     width: 100%;
-    margin: 0 0 133px 0;
+    margin: 0;
+    padding-right: 20px;
   }
 }
 
@@ -1477,6 +1479,7 @@ html {
 }
 
 .city-card {
+  visibility: hidden;
   width: 448px;
   height: 214px;
   padding: 25px 0 32px 33px;
@@ -1484,6 +1487,14 @@ html {
   border: 1px solid #000000;
   border-radius: 20px;
   background-color: transparent;
+}
+
+@media (max-width: 650px) {
+  .city-card {
+    display: none;
+    width: 282px;
+    padding: 35px 0 32px 33px;
+  }
 }
 
 .city-text-block {
@@ -1519,6 +1530,12 @@ html {
   margin: 0;
 }
 
+@media (max-width: 650px) {
+  .city-const-text p {
+    width: 65px;
+  }
+}
+
 .city-var-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1538,6 +1555,13 @@ html {
   margin: 0;
 }
 
+@media (max-width: 650px) {
+  .city-var-text {
+    width: 145px;
+    margin-left: 0;
+  }
+}
+
 .call-bttn {
   width: 122px;
   margin: 0 163px 0 130px;
@@ -1551,6 +1575,12 @@ html {
   color: #717171;
   border: 1px solid #E06733;
   border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  .call-bttn {
+    margin: 0 0 0 40px;
+  }
 }
 
 .woman-container {
@@ -1572,6 +1602,13 @@ html {
 @media (max-width: 650px) {
   .woman-container {
     max-width: 100px;
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 650px) {
+  .woman-container {
+    margin-top: 130px;
   }
 }
 
