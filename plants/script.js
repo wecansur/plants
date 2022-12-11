@@ -168,6 +168,8 @@ const address = document.querySelector('.address');
 
 const contactsTitle = document.querySelector('.contacts-title');
 
+const phoneLink = document.querySelector('.phone-link');
+
 const openCloseCitiesList = () => {
     if (cityCard.className === 'city-card city-card-active') {
         cityCard.classList.remove('city-card-active');
@@ -191,6 +193,7 @@ const fullCityCard = (city, phoneN, office) => {
     cityName.textContent = city;
     phone.textContent = phoneN;
     address.textContent = office;
+    phoneLink.setAttribute('href', `tel:${phoneN}`)
 }
 
 citiesSelector.addEventListener('click', () => {
@@ -200,7 +203,7 @@ citiesSelector.addEventListener('click', () => {
 citiesList.addEventListener('click', (event) => {
     if (event.target.className === 'city') {
         openCloseCitiesList();
-        console.log(event);
+        
         if (event.target.id === 'can') {
             fullCityCard('Canandaigua, NY', '+1	585	393 0001', '151 Charlotte Street');
         }
