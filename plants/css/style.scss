@@ -1167,6 +1167,12 @@ html {
     }
 }
 
+.title-less-margin {
+    @media (max-width:600px) {
+        margin-bottom: 40px;
+    }
+}
+
 .cities-block {
     width: 37%;
 
@@ -1225,6 +1231,12 @@ html {
         margin: 0;
         padding-right: 20px;
     }
+}
+
+.cities-selector-active {
+    padding-left: 35px;
+    background-color: #C1E698;
+    box-shadow: none;
 }
 
 .city-arrow {
@@ -1294,6 +1306,11 @@ html {
         width: 282px;
         padding: 35px 0 32px 33px;
     }
+}
+
+.city-card-active {
+    display: block;
+    visibility: visible;
 }
 
 .city-text-block {

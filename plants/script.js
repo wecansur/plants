@@ -150,3 +150,68 @@ proCareButton.addEventListener('click', () => {
 proCareCloseButton.addEventListener('click', () => {
     disactivateDropDown(proCareDD, proCareHeader, proCareButton, proCareCloseButton);
 })
+
+//city-selector
+
+const cityOpenCloseBtn = document.querySelector('.city-arrow');
+const citiesSelector = document.querySelector('.cities-selector');
+const citiesList = document.querySelector('.cities-list');
+
+const cityCard = document.querySelector('.city-card');
+
+const womanImg = document.querySelector('.woman-container');
+
+const cityTitle = document.querySelector('.city-title');
+const cityName = document.querySelector('.city-name');
+const phone = document.querySelector('.phone');
+const address = document.querySelector('.address');
+
+const contactsTitle = document.querySelector('.contacts-title');
+
+const openCloseCitiesList = () => {
+    if (cityCard.className === 'city-card city-card-active') {
+        cityCard.classList.remove('city-card-active');
+    }
+
+    cityOpenCloseBtn.classList.toggle('city-arrow-active');
+    citiesList.classList.toggle('cities-list-active');
+    citiesSelector.classList.add('cities-selector-active');
+    
+    if ((document.documentElement.clientWidth <= 1227) && (document.documentElement.clientWidth > 650)) {
+        womanImg.classList.toggle('inactive');
+    } else if (document.documentElement.clientWidth <= 650) {
+        womanImg.classList.add('inactive');
+    }
+}
+
+const fullCityCard = (city, phoneN, office) => {
+    contactsTitle.classList.add('title-less-margin');
+    cityCard.classList.add('city-card-active');
+    cityTitle.textContent = city;
+    cityName.textContent = city;
+    phone.textContent = phoneN;
+    address.textContent = office;
+}
+
+citiesSelector.addEventListener('click', () => {
+    openCloseCitiesList();
+});
+
+citiesList.addEventListener('click', (event) => {
+    if (event.target.className === 'city') {
+        openCloseCitiesList();
+        console.log(event);
+        if (event.target.id === 'can') {
+            fullCityCard('Canandaigua, NY', '+1	585	393 0001', '151 Charlotte Street');
+        }
+        if (event.target.id === 'nyc') {
+            fullCityCard('New York City', '+1	212	456 0002', '9 East 91st Street');
+        }
+        if (event.target.id === 'yon') {
+            fullCityCard('Yonkers, NY', '+1	914	678 0003', '511 Warburton Ave');
+        }
+        if (event.target.id === 'sher') {
+            fullCityCard('Sherrill, NY', '+1 315 908 0004', '14 WEST Noyes BLVD');
+        }
+    }
+})
