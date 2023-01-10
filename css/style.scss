@@ -44,7 +44,7 @@
     }
 }
 
-$background-color: #EDF2EC;;
+$background-color: #EDF2EC;
 $links-nav: #010201;
 $main-text: #636060;
 $green-text: #499A18;
@@ -135,6 +135,7 @@ html {
 
 .nav-section {
     padding: 42px 0;
+
     width: 465px;
     height: 50px;
 
@@ -304,7 +305,6 @@ html {
     @media (max-width:665px) {
         width: 100%;
     }
-
 }
 
 .welcome-title {
@@ -700,7 +700,6 @@ html {
         height: auto;
         border-radius: 20px 20px 0px 0px;
     }
-    
 }
 
 .service-text {
@@ -732,6 +731,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
     text-align: center;
 
     color: $grey;
@@ -754,6 +754,7 @@ html {
     @media (max-width: 665px) {
         height: 512px;
     }
+    
     .container {
         display: flex;
         justify-content: space-between;

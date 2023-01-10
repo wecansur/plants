@@ -29,7 +29,6 @@ html {
   max-width: 1440px;
   margin: auto;
   padding: 0 110px;
-}
 
 @media (max-width: 972px) {
   .container {
@@ -101,6 +100,7 @@ html {
 
 .nav-section {
   padding: 42px 0;
+
   width: 465px;
   height: 50px;
 }
@@ -224,6 +224,7 @@ html {
   padding: 10px 90px 10px 5px;
 }
 
+
 .welcome {
   height: 532px;
   background-color: #EDF2EC;
@@ -285,6 +286,7 @@ html {
 .leafs {
   width: 100%;
   height: auto;
+
 }
 
 .welcome-block {
